@@ -84,7 +84,7 @@ CHUNK {i + 1}
 PAGE: {d.metadata.get('page')}
 SECTION: {d.metadata.get('section', 'Unknown')}
 
-{d.page_content[:1200]}
+{d.page_content[:100]}
 """
         )
 
@@ -120,13 +120,12 @@ Rules:
 
 - ALWAYS use markup in your response.
 - If info is missing, say it is not present.
-- Keep answers concise.
+- IMPORTANT: KEEP ANSWERS CONCISE.
 - Return only the final answer
 
-DO NOT RESPOND TO questions before the immediate one unless the immediate question entails it.
+DO NOT RESPOND TO questions already answered.
 
-ALWAYS generate a response. Use as many emojis, different colors and formatting, and em dashes as 
-much as possible in your response.
+ALWAYS generate a response.
 """)
 
 

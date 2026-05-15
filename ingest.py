@@ -19,7 +19,7 @@ from pdf2image import convert_from_path
 PDF_PATH = config["pdf_path"]
 OLLAMA_URL = config["ollama_url"]
 
-JSON_PATH = "./processed_docs.json"
+JSON_PATH = "data/processed_docs.json"
 OCR_MODEL = "qwen3.5:35b-a3b-q8_0"
 
 
